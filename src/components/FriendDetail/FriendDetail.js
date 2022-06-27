@@ -10,7 +10,7 @@ const FriendDetail = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setFriend(data))
-    }, [])
+    }, [friendId])
 
     return (
         <div style={{border: '2px solid salmon', borderRadius: '8px', margin: '2em 15em 2em 15em'}}>
